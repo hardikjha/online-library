@@ -15,6 +15,7 @@ Built with **Create React App**, **React Router**, and **Redux Toolkit**.
 ### Home Page
 ![Home Page](src/img/onlib.PNG)
 
+### Browse Page
 ![Browse Page](src/img/onlib2.PNG)
 
 ### Add Book Page
