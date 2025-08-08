@@ -1,14 +1,19 @@
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import BookCard from '../components/BookCard';
 
 export default function Home() {
   const books = useSelector(state => state.books);
   const categories = [...new Set(books.map(book => book.category))];
-  const popular = [...books].sort((a, b) => b.rating - a.rating).slice(0, 4);
+  const popular = [...books]
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, 4);
 
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>Welcome to the Online Library</h1>
+    <div className="container">
+      <h1>Welcome to NovelVault</h1>
+
+      {/* Categories Section */}
       <h2>Categories</h2>
       <ul>
         {categories.map(cat => (
@@ -18,14 +23,13 @@ export default function Home() {
         ))}
       </ul>
 
-      <h2>Popular Books</h2>
-      <ul>
+      {/* Popular Books Section */}
+      <h2 style={{ marginTop: '20px' }}>Popular Books</h2>
+      <div className="book-grid">
         {popular.map(book => (
-          <li key={book.id}>
-            {book.title} - <Link to={`/book/${book.id}`}>View Details</Link>
-          </li>
+          <BookCard key={book.id} book={book} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

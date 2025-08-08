@@ -6,7 +6,7 @@ const books = [
     category: 'Fiction',
     description: 'A story about the Jazz Age in the United States.',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1544936207-1b1b1f2d5d13'
+    image: 'https://picsum.photos/id/1011/200/300'
   },
   {
     id: '2',
@@ -15,7 +15,7 @@ const books = [
     category: 'Self-help',
     description: 'A guide to building good habits and breaking bad ones.',
     rating: 4,
-    image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794'
+    image: 'https://picsum.photos/id/1027/200/300'
   },
   {
     id: '3',
@@ -24,7 +24,7 @@ const books = [
     category: 'Fiction',
     description: 'A novel of warmth and humor despite dealing with serious issues of rape and racial inequality.',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1528207776546-365bb710ee93'
+    image: 'https://picsum.photos/id/1035/200/300'
   },
   {
     id: '4',
@@ -33,7 +33,7 @@ const books = [
     category: 'Dystopian',
     description: 'A chilling prophecy about the future.',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1529590003495-9f3f5d1f5a6c'
+    image: 'https://picsum.photos/id/1042/200/300'
   },
   {
     id: '5',
@@ -42,7 +42,7 @@ const books = [
     category: 'Business',
     description: 'A new approach to business that’s being adopted around the world.',
     rating: 4,
-    image: 'https://images.unsplash.com/photo-1586483766114-aaa0f6b6d9f4'
+    image: 'https://picsum.photos/id/1050/200/300'
   },
   {
     id: '6',
@@ -51,7 +51,7 @@ const books = [
     category: 'Self-help',
     description: 'Rules for focused success in a distracted world.',
     rating: 4,
-    image: 'https://images.unsplash.com/photo-1507842217343-583bb7270b66'
+    image: 'https://picsum.photos/id/1062/200/300'
   },
   {
     id: '7',
@@ -60,7 +60,7 @@ const books = [
     category: 'Programming',
     description: 'A handbook of agile software craftsmanship.',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1556157382-97eda2d62296'
+    image: 'https://picsum.photos/id/1074/200/300'
   },
   {
     id: '8',
@@ -69,7 +69,7 @@ const books = [
     category: 'Fantasy',
     description: 'A young wizard’s journey begins.',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1544936207-1b1b1f2d5d13'
+    image: 'https://picsum.photos/id/1084/200/300'
   }
 ];
 
