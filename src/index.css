@@ -104,3 +104,61 @@ p.error {
   color: red;
   font-size: 0.9rem;
 }
+
+
+/* Book Grid */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Book Card */
+.book-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.book-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.book-info {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-info h3 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.book-info p {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
