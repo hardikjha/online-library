@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# NovelVault: The Online Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based online library application where users can browse books, view details, and add new books with cover images.  
+Built with **Create React App**, **React Router**, and **Redux Toolkit**.
 
-## Available Scripts
 
-In the project directory, you can run:
+## 🚀 Features
+- **Home Page** with book categories and featured books
+- **Browse Page** to view all books in a grid layout
+- **Book Details Page** showing description, author, category, and rating
+- **Add Book Page** with validation and random cover image generation
 
-### `npm start`
+## 📸 Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Home Page
+![Home Page](src/img/onlib.PNG)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Browse Page](src/img/onlib2.PNG)
 
-### `npm test`
+### Add Book Page
+![Add Book](src/img/onlib3.PNG)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Tech Stack
+- **React** (Create React App)
+- **Redux Toolkit** for state management
+- **React Router DOM** for navigation
+- **CSS Flexbox/Grid** for layout
+- **Picsum Photos API** for placeholder book covers
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Installation & Setup
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/nv-library.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Move into project folder
+cd nv-library
 
-### `npm run eject`
+# Install dependencies
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Start development server
+npm start
+```
+App will run on **http://localhost:3000/**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Adding a New Book
+- Go to **Add Book** page
+- Fill in Title, Author, Category, Description, Rating
+- An image cover is pre-filled (can be replaced)
+- Click **Add Book** — it will appear instantly in the Browse page
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Data Persistence & Versioning
+Books are stored in `localStorage` with a version key.  
+When dummy data changes, updating the version in `store/index.js` automatically refreshes stored books.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Customization
+- **Change App Title:** Edit `<title>` in `public/index.html`
+- **Change Favicon:** Replace `public/favicon.png`
+- **Change Dummy Data:** Edit `src/data/dummyBooks.js`
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Repository Link](https://github.com/hardikjha/online-library)
